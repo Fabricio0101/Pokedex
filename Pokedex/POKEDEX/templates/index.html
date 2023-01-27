@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON AGENDA</title>
+</head>
+<body>
+    <form action="buscar" method="post">
+        <div class="pesquisa">
+            <input placeholder="Buscar Pokemon" name="nome" type="text">
+            <button type="submit" name="buscar">Buscar</button>
+        </div>
+        <div class="conteudo">
+            <h3>{{nome}}</h3>
+            <img src= {{foto}}><br>
+            <label>{{tipo1}}</label>
+            <label>{{tipo2}}</label>
+            <hr>
+            <label>Golpes</label>
+            <p>{{golpes}}</p>
+        </div>
+        <center><img src="{{ user_image }}"></center>
+    </form>
+</body>
+</html>
